@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Voice Assistant built with JavaScript">
+    <meta name="keywords" content="Voice Assistant, Speech Recongnizer, JavaScript assistant">
+    <meta name="author" content="Sanjay Sahu Bandla">
+    <meta name=”theme-color” content=”#15508ec7">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#15508ec7">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#15508ec7">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#15508ec7">
+    
+    <meta property="og:title" content="Dot - A Voice Assistant" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ssb-dot.netlify.app/" />
+    <meta property="og:image" content="https://ssb-dot.netlify.app/Assets/images/icon-256x256.png">
+    <meta property="og:description" content="A Simple Voice Assistant built with JavaScript works as PWA too." />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    
+    <!-- CODELAB: Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/Assets/images/icon.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/Assets/images/icon-160-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/Assets/images/icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/Assets/images/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Assets/images/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/Assets/images/icon-256x256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/Assets/images/icon-512x512.png">
+    <link rel="apple-touch-icon" href="/Assets/images/icon.png">
+    <link rel="apple-touch-icon" sizes="128x128 144x144 152x152 192x192" href="/Assets/images/icon.png">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    <!-- Custom -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="Assets/images/icon-152x152.png">
+    
+    <link rel="shortcut icon" href="Assets/images/icon-256x256.png" type="image/x-icon" />
+    <!-- CODELAB: Add the install script here -->
+    <script src="install.js"></script>
+    
+    <link rel="stylesheet" href="Assets/dist/style.css">
+    <script src="Assets/dist/script.js"></script>
+    
+    <title>Dot - A Voice Assistant</title>
+</head>
+<body class="container">
+    
+    <div class="wrapper">
+        
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss" class="rounded-circle">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            
+            <div class="sidebar-header">
+                <h2 class="text-light font-italic mb-0">Dot </h2>
+                <small class="font-italic text-light">- A Voice Assistant</small>
+            </div>
+            
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Available commands</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">How are you</a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" aria-expanded="false">Calculation
+                                <br><small>start of by saying calculate</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Searching
+                                <br><small>Ex: What is computer</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Know current time & day
+                                <br><small>Ex: What time is it</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Tell me a joke
+                                <br><small>Says random joke</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Follow</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a target="_blank" href="https://github.com/Sanjay-Sahu-Bandla"><i class="fab fa-github mr-2"></i> GitHub</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/sanjay_sahu_bandla/"><i class="fab fa-instagram mr-2"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100010035810827"><i class="fab fa-facebook-f mr-2"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/SanjaySahu14312"><i class="fab fa-twitter mr-2"></i> Twitter</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://sanjaybandla.ml" target="_blank">Portfolio</a>
+                </li>
+                <li>
+                    <a href="mailto:sanjaysahubandla@gmail.com">Contact</a>
+                </li>
+            </ul>
+            
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://github.com/Sanjay-Sahu-Bandla" class="author">Authour - SSB</a>
+                </li>
+                <li>
+                    <a id="install-pwa-btn" style="display: none;" href="#" class="border border-primary article">Install App</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Page Content  -->
+        <div id="content">
+            
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h2 class="text-light font-italic mb-0">Dot </h2>
+                    <small class="font-italic text-light ml-3">- A Voice Assistant</small>
+                </div>
+                <div>
+                    <button type="button" id="sidebarCollapse" class="btn btn-white">
+                        <i class="fas fa-align-right text-white" id="info-icon"></i>
+                    </button>
+                </div>
+            </div><br><br>
+            
+            <div id="main">
+                
+                <div id="output">
+                    <div id="chatbox" class="rounded shadow p-3">
+                        <ul class="list-unstyled">
+                            <div>Tap the mic to start exploring</div>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="mic" class="shadow">
+                <i class="fas fa-microphone text-primary bg-white rounded-circle"></i>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    
+    <div class="overlay"></div>
+    
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <script src="service-worker.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+            
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+            
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+        
+        // CODELAB: Register service worker.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+            });
+        }
+        
+        // add installable button for pwa
+        window.deferredPrompt = {};
+        
+        // get button with id
+        const install_button = document.querySelector('#install-pwa-btn');
+        
+        // if the app can be installed emit beforeinstallprompt
+        window.addEventListener('beforeinstallprompt', e => {
+            // this event does not fire if the application is already installed
+            // then your button still hidden ;)
+            
+            // show button with display:block;
+            install_button.style.display = 'block';
+            
+            // prevent default event
+            e.preventDefault();
+            
+            // store install avaliable event
+            window.deferredPrompt = e;
+            
+            // wait for click install button by user
+            install_button.addEventListener('click', e => {
+                window.deferredPrompt.prompt();
+                window.deferredPrompt.userChoice.then(choiceResult => {
+                    if (choiceResult.outcome === 'accepted') {
+                        // user accept the prompt
+                        
+                        // lets hidden button
+                        install_button.style.display = 'none';
+                    } else {
+                        console.log('User dismissed the prompt');
+                    }
+                    window.deferredPrompt = null;
+                });
+            });
+        });
+        
+        // if are standalone android OR safari
+        if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+            // hidden the button
+            install_button.style.display = 'none';
+        }
+        
+        // do action when finished install
+        window.addEventListener('appinstalled', e => {
+            console.log("success app install!");
+        });
+        
+    </script>
+</body>
+</html>
